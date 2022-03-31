@@ -1,0 +1,177 @@
+*{
+  margin:0;
+  color:#333;
+}
+
+.content{
+  max-width: 1200px;
+  margin:10px 250px 40px 250px;
+  padding:20px;
+}
+
+.buttons a{
+  border:0px;
+  margin:0px 0px 10px 0px;
+  background: #fff;
+  color:#333;
+  padding:11px;
+  font-size: 17px;
+}
+.buttons a:hover{
+  background: #333;
+  color:#fff
+}
+
+.top-section{
+  background: #333;
+  padding:20px;
+}
+
+.top-section p{
+  color:#fff;
+}
+
+.heading-top-section{
+  color:white;
+  font-size: 35px;
+
+}
+.blog-details h2{
+  font-size: 30px;
+  padding:6px;
+}
+
+.blog-list .jumbotron{
+  background: rgba(218, 217, 217, 0.897);
+  padding:15px;
+  margin-top:20px;
+  width: 400px;
+  display:block;
+  box-shadow:1px 3px 5px rgba(0,0,0,0.2);
+  margin:20px;
+  
+}
+
+.blog-list .blcontainer{
+  display: flex;
+  flex-direction: row;
+  flex:1;
+  flex-wrap: wrap;
+  
+}
+.blog-list{
+  margin-left: 45px;
+}
+.blog-list h1{
+  font-size: 35px;
+  text-align: center;
+  margin-top:30px;
+}
+
+
+
+.welcome{
+  background: #333;
+  color:#fff;
+  padding:20px;
+}
+.welcome p{
+  color:#fff;
+}
+.welcome h1{
+  color:#fff;
+}
+.welcome a{
+  background: rgb(33, 95, 228);
+  color:white;
+  border:2px solid white;
+  
+}
+.blog-preview .jumbotron a{
+  background: rgb(33, 95, 228);
+  border:0;
+  box-shadow: 2px rgba(0,0,0,0.2);
+}
+.blog-preview .jumbotron a:hover{
+  background: rgb(16, 63, 167);
+}
+
+.blog-preview .jumbotron h2{
+  font-weight:600;
+
+}
+.blog-preview .jumbotron .cat{
+  color:rgb(33, 95, 228);
+  font-size: 15px;
+
+
+}
+
+
+
+.create label{
+  text-align: left;
+  display:block;
+}
+
+.create h2{
+  font-size: 30px;
+  color:#333;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.create input,.create textarea, .create select{
+  width:100%;
+  padding:6px 10px;
+  margin:10px 0px;
+  border:1px solid #ddd;
+  box-sizing: border-box;
+  display:block;
+  border-radius: 5px;
+}
+
+.create button{
+  background:rgb(33, 95, 228);
+  color:#fff;
+  border:0;
+  padding:3px;
+  border-radius: 8px;
+  cursor:pointer;
+  border:2px solid white;
+  margin-top: 20px;
+  width: 200px;
+  font-size: 23px;
+  font-weight: 500;
+}
+
+.create label{
+  color:#fff;
+}
+.create form{
+  max-width:500px;
+  margin:0 auto;
+  text-align: center;
+  background: #333;
+  color:#fff;
+  padding:20px;
+  border-radius: 10px;
+}
+.create{
+  text-align: center;
+}
+.blog-details button{
+  background:#333;
+  color:#fff;
+  border:0;
+  padding:3px;
+  border-radius:8px;
+  cursor:pointer;
+  font-size: 23px;
+  font-weight: 400px;
+  width:20%;
+  align-items:center;
+  margin-top: 30px;
+  margin-left:350px;
+
+}
