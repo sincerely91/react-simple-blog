@@ -12,7 +12,7 @@ const Create = () => {
 
     const handleSubmit=(e)=>{
         e.preventDefault();
-        const blog={ title,description, body, author,category};
+        const blog={id:50,title,description, body, author,category};
         setIsPending(true)
 
         fetch("http://127.0.0.1:8000/blog",{
