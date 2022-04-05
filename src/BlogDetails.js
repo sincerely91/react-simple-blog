@@ -1,20 +1,22 @@
 import { useHistory, useParams } from "react-router-dom";
 import useFetch from "./useFetch";
-import { useEffect } from "react";
+import { useEffect,useState } from "react";
 import axios from "axios";
 
 
 const BlogDetails = () => {
-    let blog = [];
+    let blogData = [];
+    const[blog,setBlog]=useState();
     const {id}= useParams()
     useEffect(() => {
         axios.get("http://127.0.0.1:8000/blogs/?id="+id)
           .then(response => {
             if (response.data) {
-              blog=response.data
-              document.getElementById("detailTitle").innerHTML= blog[0].title;
-              document.getElementById("detailAuthor").innerHTML=blog[0].author;
-              document.getElementById("detailBody").innerHTML=blog[0].body;
+              blogData=response.data;
+              setBlog(response.data);
+              document.getElementById("detailTitle").innerHTML= blogData[0].title;
+              document.getElementById("detailAuthor").innerHTML=blogData[0].author;
+              document.getElementById("detailBody").innerHTML=blogData[0].body;
             }
     
           })
