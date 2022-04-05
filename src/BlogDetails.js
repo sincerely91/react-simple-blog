@@ -22,7 +22,7 @@ const BlogDetails = () => {
     // const {data:blog,error,isPending}=useFetch("http://127.0.0.1:8000/blogs/?id="+id)
     const history= useHistory();
     const handleClick=() => {
-        fetch("http://127.0.0.1:8000/blogs/?id="+blog.id,{
+        fetch("http://127.0.0.1:8000/blogs/?id="+blog[0].id,{
             method:"DELETE"
         }).then(()=>{
             history.push("/home")
