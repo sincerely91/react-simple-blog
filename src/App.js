@@ -17,6 +17,7 @@ import Health from './Categories/Health';
 import Style from './Categories/Style';
 import Travel from './Categories/Travel'
 import Create from './Create';
+import Login from './sigin';
 
 
 function App() {
@@ -33,6 +34,9 @@ function App() {
               </Route>
               <Route exact path="/home">
                 <Home/>
+              </Route>
+              <Route exact path="/login">
+                <Login/>
               </Route>
               <Route exact path="/create">
                 <Create/>

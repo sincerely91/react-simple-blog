@@ -27,7 +27,7 @@ const Navbar = () => {
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link active" aria-current="page" exact to="/create">
+              <NavLink className="nav-link active" aria-current="page" exact to="/Login">
                 New Blog
               </NavLink>
             </li>
