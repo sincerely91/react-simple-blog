@@ -2,7 +2,7 @@ import BlogList from "../BlogList";
 import useFetch from "../useFetch";
 
 const Design = () => {
-    const {data:blogs, isPending,error}=useFetch("http://127.0.0.1:8000/blog");
+    const {data:blogs, isPending,error}=useFetch("https://blogvesit.herokuapp.com//blog/");
 
     return ( 
         <div className="design">
