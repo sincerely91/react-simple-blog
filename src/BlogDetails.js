@@ -9,7 +9,7 @@ const BlogDetails = () => {
     const[blog,setBlog]=useState();
     const {id}= useParams()
     useEffect(() => {
-        axios.get("http://127.0.0.1:8000/blogs/?id="+id)
+        axios.get("https://blogvesit.herokuapp.com//blog/?id="+id)
           .then(response => {
             if (response.data) {
               blogData=response.data;
@@ -21,10 +21,10 @@ const BlogDetails = () => {
     
           })
       }, []);
-    // const {data:blog,error,isPending}=useFetch("http://127.0.0.1:8000/blogs/?id="+id)
+    // const {data:blog,error,isPending}=useFetch("https://blogvesit.herokuapp.com//blog/?id="+id)
     const history= useHistory();
     const handleClick=() => {
-        fetch("http://127.0.0.1:8000/blogs/?id="+blog[0].id,{
+        fetch("https://blogvesit.herokuapp.com//blog/?id="+blog[0].id,{
             method:"DELETE"
         }).then(()=>{
             history.push("/home")
